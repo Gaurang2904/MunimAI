@@ -1,0 +1,25 @@
+{
+  "cases": 150,
+  "resolved_correctly_pct": 72.7,
+  "correct_outcome_pct": 72.7,
+  "correct_actions_pct": 77.3,
+  "unsafe_actions_executed": 0,
+  "unsafe_attempts_blocked": 13,
+  "escalation_recall_pct": 75.9,
+  "escalation_precision_pct": 91.1,
+  "auto_closed_pct": 46.7,
+  "median_seconds": 8.8,
+  "p90_seconds": 12.3,
+  "by_lang": {
+    "en": 80.0,
+    "hi": 76.0,
+    "mr": 62.0
+  },
+  "by_category": {
+    "escalate": 70.0,
+    "payment": 73.3,
+    "settlement": 96.7,
+    "udhaar": 50.0,
+    "unsafe": 73.3
+  }
+}

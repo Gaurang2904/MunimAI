@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# model weights (rebuild with finetune/train_nlu.py + finetune/build_ollama_model.sh)
+models/
+finetune/out/
+*.gguf
+*.safetensors
+
+# local run logs (contain machine paths)
+results/*.log
+docs/screens/*_refund_due.png
+docs/screens/*_escalation.png
+
+.streamlit/secrets.toml

@@ -1,0 +1,4222 @@
+{
+ "summary": {
+  "model": "8b",
+  "cases": 150,
+  "exact_pct": 52.0,
+  "fields_pct": {
+   "intent": 75.3,
+   "amount": 96.7,
+   "day": 74.0,
+   "name": 94.7,
+   "lang": 90.0
+  },
+  "exact_by_lang": {
+   "hi": 56.0,
+   "mr": 44.0,
+   "en": 56.0
+  },
+  "median_ms": 2775
+ },
+ "rows": [
+  {
+   "id": "P01-hi",
+   "lang": "hi",
+   "message": "ग्राहक बोल रहा है साढ़े चार सौ भेज दिए, पर साउंडबॉक्स कुछ नहीं बोला",
+   "gold": {
+    "intent": "payment_check",
+    "amount": 450,
+    "day": null,
+    "name": null,
+    "lang": "hi"
+   },
+   "pred": {
+    "intent": "device_issue",
+    "amount": 450,
+    "day": "today",
+    "name": null,
+    "lang": "hi"
+   },
+   "ok": {
+    "intent": false,
+    "amount": true,
+    "day": false,
+    "name": true,
+    "lang": true
+   },
+   "exact": false,
+   "seconds": 11.38
+  },
+  {
+   "id": "P01-mr",
+   "lang": "mr",
+   "message": "गिऱ्हाईक म्हणतोय साडेचारशे पाठवले, पण साउंडबॉक्स काहीच बोलला नाही",
+   "gold": {
+    "intent": "payment_check",
+    "amount": 450,
+    "day": null,
+    "name": null,
+    "lang": "mr"
+   },
+   "pred": {
+    "intent": "device_issue",
+    "amount": 450,
+    "day": "today",
+    "name": null,
+    "lang": "mr"
+   },
+   "ok": {
+    "intent": false,
+    "amount": true,
+    "day": false,
+    "name": true,
+    "lang": true
+   },
+   "exact": false,
+   "seconds": 2.83
+  },
+  {
+   "id": "P01-en",
+   "lang": "en",
+   "message": "customer bol raha hai saade chaar sau bhej diya, soundbox ne kuch nahi bola",
+   "gold": {
+    "intent": "payment_check",
+    "amount": 450,
+    "day": null,
+    "name": null,
+    "lang": "en"
+   },
+   "pred": {
+    "intent": "device_issue",
+    "amount": 450,
+    "day": "today",
+    "name": null,
+    "lang": "hi"
+   },
+   "ok": {
+    "intent": false,
+    "amount": true,
+    "day": false,
+    "name": true,
+    "lang": false
+   },
+   "exact": false,
+   "seconds": 2.779
+  },
+  {
+   "id": "P02-hi",
+   "lang": "hi",
+   "message": "अभी 9:15 के आसपास 1200 रुपये का पेमेंट आया क्या?",
+   "gold": {
+    "intent": "payment_check",
+    "amount": 1200,
+    "day": "today",
+    "name": null,
+    "lang": "hi"
+   },
+   "pred": {
+    "intent": "payment_check",
+    "amount": 1200,
+    "day": "today",
+    "name": null,
+    "lang": "hi"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.78
+  },
+  {
+   "id": "P02-mr",
+   "lang": "mr",
+   "message": "आत्ता सव्वा नऊच्या सुमारास 1200 रुपयांचे पेमेंट आले का?",
+   "gold": {
+    "intent": "payment_check",
+    "amount": 1200,
+    "day": "today",
+    "name": null,
+    "lang": "mr"
+   },
+   "pred": {
+    "intent": "payment_check",
+    "amount": 1200,
+    "day": "today",
+    "name": null,
+    "lang": "mr"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.813
+  },
+  {
+   "id": "P02-en",
+   "lang": "en",
+   "message": "aaj 9:15 ke aaspaas 1200 ka payment aaya kya?",
+   "gold": {
+    "intent": "payment_check",
+    "amount": 1200,
+    "day": "today",
+    "name": null,
+    "lang": "en"
+   },
+   "pred": {
+    "intent": "payment_check",
+    "amount": 1200,
+    "day": "today",
+    "name": null,
+    "lang": "hi"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": false
+   },
+   "exact": false,
+   "seconds": 2.804
+  },
+  {
+   "id": "P03-hi",
+   "lang": "hi",
+   "message": "कल ढाई सौ का एक पेमेंट था, वो आया था क्या?",
+   "gold": {
+    "intent": "payment_check",
+    "amount": 250,
+    "day": "yesterday",
+    "name": null,
+    "lang": "hi"
+   },
+   "pred": {
+    "intent": "payment_check",
+    "amount": 200,
+    "day": "yesterday",
+    "name": null,
+    "lang": "hi"
+   },
+   "ok": {
+    "intent": true,
+    "amount": false,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": false,
+   "seconds": 2.789
+  },
+  {
+   "id": "P03-mr",
+   "lang": "mr",
+   "message": "काल अडीचशेचे एक पेमेंट होते, ते आले होते का?",
+   "gold": {
+    "intent": "payment_check",
+    "amount": 250,
+    "day": "yesterday",
+    "name": null,
+    "lang": "mr"
+   },
+   "pred": {
+    "intent": "payment_check",
+    "amount": 500,
+    "day": "yesterday",
+    "name": null,
+    "lang": "hi"
+   },
+   "ok": {
+    "intent": true,
+    "amount": false,
+    "day": true,
+    "name": true,
+    "lang": false
+   },
+   "exact": false,
+   "seconds": 2.809
+  },
+  {
+   "id": "P03-en",
+   "lang": "en",
+   "message": "Did yesterday's payment of 250 come through?",
+   "gold": {
+    "intent": "payment_check",
+    "amount": 250,
+    "day": "yesterday",
+    "name": null,
+    "lang": "en"
+   },
+   "pred": {
+    "intent": "payment_check",
+    "amount": 250,
+    "day": "yesterday",
+    "name": null,
+    "lang": "en"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.781
+  },
+  {
+   "id": "P04-hi",
+   "lang": "hi",
+   "message": "₹780 चेक करो, ग्राहक कह रहा है पैसे कट गए",
+   "gold": {
+    "intent": "payment_check",
+    "amount": 780,
+    "day": null,
+    "name": null,
+    "lang": "hi"
+   },
+   "pred": {
+    "intent": "payment_check",
+    "amount": 780,
+    "day": "today",
+    "name": null,
+    "lang": "hi"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": false,
+    "name": true,
+    "lang": true
+   },
+   "exact": false,
+   "seconds": 2.806
+  },
+  {
+   "id": "P04-mr",
+   "lang": "mr",
+   "message": "₹780 तपासा, गिऱ्हाईक म्हणतोय पैसे कापले गेले",
+   "gold": {
+    "intent": "payment_check",
+    "amount": 780,
+    "day": null,
+    "name": null,
+    "lang": "mr"
+   },
+   "pred": {
+    "intent": "payment_check",
+    "amount": 780,
+    "day": "today",
+    "name": null,
+    "lang": "mr"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": false,
+    "name": true,
+    "lang": true
+   },
+   "exact": false,
+   "seconds": 2.781
+  },
+  {
+   "id": "P04-en",
+   "lang": "en",
+   "message": "check 780 rs, customer says money got debited",
+   "gold": {
+    "intent": "payment_check",
+    "amount": 780,
+    "day": null,
+    "name": null,
+    "lang": "en"
+   },
+   "pred": {
+    "intent": "payment_check",
+    "amount": 780,
+    "day": "today",
+    "name": null,
+    "lang": "en"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": false,
+    "name": true,
+    "lang": true
+   },
+   "exact": false,
+   "seconds": 2.773
+  },
+  {
+   "id": "P05-hi",
+   "lang": "hi",
+   "message": "99 रुपये वाला पेमेंट मिला या नहीं?",
+   "gold": {
+    "intent": "payment_check",
+    "amount": 99,
+    "day": null,
+    "name": null,
+    "lang": "hi"
+   },
+   "pred": {
+    "intent": "payment_check",
+    "amount": 99,
+    "day": "today",
+    "name": null,
+    "lang": "hi"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": false,
+    "name": true,
+    "lang": true
+   },
+   "exact": false,
+   "seconds": 2.77
+  },
+  {
+   "id": "P05-mr",
+   "lang": "mr",
+   "message": "99 रुपयांचे पेमेंट मिळाले की नाही?",
+   "gold": {
+    "intent": "payment_check",
+    "amount": 99,
+    "day": null,
+    "name": null,
+    "lang": "mr"
+   },
+   "pred": {
+    "intent": "payment_check",
+    "amount": 99,
+    "day": "yesterday",
+    "name": null,
+    "lang": "mr"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": false,
+    "name": true,
+    "lang": true
+   },
+   "exact": false,
+   "seconds": 2.791
+  },
+  {
+   "id": "P05-en",
+   "lang": "en",
+   "message": "Did I get the 99 rupees payment?",
+   "gold": {
+    "intent": "payment_check",
+    "amount": 99,
+    "day": null,
+    "name": null,
+    "lang": "en"
+   },
+   "pred": {
+    "intent": "payment_check",
+    "amount": 99,
+    "day": "today",
+    "name": null,
+    "lang": "en"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": false,
+    "name": true,
+    "lang": true
+   },
+   "exact": false,
+   "seconds": 2.733
+  },
+  {
+   "id": "P06-hi",
+   "lang": "hi",
+   "message": "ग्राहक बोल रहा है ₹450 भेज दिए, मुझे मिले नहीं।",
+   "gold": {
+    "intent": "payment_check",
+    "amount": 450,
+    "day": null,
+    "name": null,
+    "lang": "hi"
+   },
+   "pred": {
+    "intent": "dispute",
+    "amount": 450,
+    "day": null,
+    "name": null,
+    "lang": "hi"
+   },
+   "ok": {
+    "intent": false,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": false,
+   "seconds": 2.747
+  },
+  {
+   "id": "P06-mr",
+   "lang": "mr",
+   "message": "गिऱ्हाईक म्हणतोय ₹450 पाठवले, मला मिळाले नाहीत.",
+   "gold": {
+    "intent": "payment_check",
+    "amount": 450,
+    "day": null,
+    "name": null,
+    "lang": "mr"
+   },
+   "pred": {
+    "intent": "dispute",
+    "amount": 450,
+    "day": "yesterday",
+    "name": null,
+    "lang": "mr"
+   },
+   "ok": {
+    "intent": false,
+    "amount": true,
+    "day": false,
+    "name": true,
+    "lang": true
+   },
+   "exact": false,
+   "seconds": 2.778
+  },
+  {
+   "id": "P06-en",
+   "lang": "en",
+   "message": "Customer says he sent 450, but I didn't get it.",
+   "gold": {
+    "intent": "payment_check",
+    "amount": 450,
+    "day": null,
+    "name": null,
+    "lang": "en"
+   },
+   "pred": {
+    "intent": "dispute",
+    "amount": 450,
+    "day": "yesterday",
+    "name": null,
+    "lang": "en"
+   },
+   "ok": {
+    "intent": false,
+    "amount": true,
+    "day": false,
+    "name": true,
+    "lang": true
+   },
+   "exact": false,
+   "seconds": 2.796
+  },
+  {
+   "id": "P07-hi",
+   "lang": "hi",
+   "message": "डेढ़ हज़ार ग्राहक के खाते से कट गए पर मेरे पास नहीं आए",
+   "gold": {
+    "intent": "payment_check",
+    "amount": 1500,
+    "day": null,
+    "name": null,
+    "lang": "hi"
+   },
+   "pred": {
+    "intent": "settlement_status",
+    "amount": 1500,
+    "day": "today",
+    "name": null,
+    "lang": "hi"
+   },
+   "ok": {
+    "intent": false,
+    "amount": true,
+    "day": false,
+    "name": true,
+    "lang": true
+   },
+   "exact": false,
+   "seconds": 2.833
+  },
+  {
+   "id": "P07-mr",
+   "lang": "mr",
+   "message": "दीड हजार गिऱ्हाईकाच्या खात्यातून कापले, पण माझ्याकडे आले नाहीत",
+   "gold": {
+    "intent": "payment_check",
+    "amount": 1500,
+    "day": null,
+    "name": null,
+    "lang": "mr"
+   },
+   "pred": {
+    "intent": "payout_change",
+    "amount": 1500,
+    "day": "today",
+    "name": null,
+    "lang": "mr"
+   },
+   "ok": {
+    "intent": false,
+    "amount": true,
+    "day": false,
+    "name": true,
+    "lang": true
+   },
+   "exact": false,
+   "seconds": 2.852
+  },
+  {
+   "id": "P07-en",
+   "lang": "en",
+   "message": "dedh hazaar customer ke account se kat gaye par mere paas nahi aaye",
+   "gold": {
+    "intent": "payment_check",
+    "amount": 1500,
+    "day": null,
+    "name": null,
+    "lang": "en"
+   },
+   "pred": {
+    "intent": "dispute",
+    "amount": 1500,
+    "day": "yesterday",
+    "name": "customer",
+    "lang": "hi"
+   },
+   "ok": {
+    "intent": false,
+    "amount": true,
+    "day": false,
+    "name": false,
+    "lang": false
+   },
+   "exact": false,
+   "seconds": 2.832
+  },
+  {
+   "id": "P08-hi",
+   "lang": "hi",
+   "message": "कल 340 रुपये का पेमेंट फेल हुआ था, ग्राहक के पैसे कट गए",
+   "gold": {
+    "intent": "payment_check",
+    "amount": 340,
+    "day": "yesterday",
+    "name": null,
+    "lang": "hi"
+   },
+   "pred": {
+    "intent": "payment_check",
+    "amount": 340,
+    "day": "yesterday",
+    "name": null,
+    "lang": "hi"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.811
+  },
+  {
+   "id": "P08-mr",
+   "lang": "mr",
+   "message": "काल 340 रुपयांचे पेमेंट फेल झाले, गिऱ्हाईकाचे पैसे कापले गेले",
+   "gold": {
+    "intent": "payment_check",
+    "amount": 340,
+    "day": "yesterday",
+    "name": null,
+    "lang": "mr"
+   },
+   "pred": {
+    "intent": "payment_check",
+    "amount": 340,
+    "day": "yesterday",
+    "name": null,
+    "lang": "mr"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.832
+  },
+  {
+   "id": "P08-en",
+   "lang": "en",
+   "message": "Yesterday a 340 payment failed but the customer's money was deducted",
+   "gold": {
+    "intent": "payment_check",
+    "amount": 340,
+    "day": "yesterday",
+    "name": null,
+    "lang": "en"
+   },
+   "pred": {
+    "intent": "payment_check",
+    "amount": 340,
+    "day": "yesterday",
+    "name": null,
+    "lang": "en"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.761
+  },
+  {
+   "id": "P09-hi",
+   "lang": "hi",
+   "message": "दो हज़ार का पेमेंट अटक गया है, ग्राहक परेशान है",
+   "gold": {
+    "intent": "payment_check",
+    "amount": 2000,
+    "day": null,
+    "name": null,
+    "lang": "hi"
+   },
+   "pred": {
+    "intent": "payment_check",
+    "amount": 2000,
+    "day": "today",
+    "name": null,
+    "lang": "hi"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": false,
+    "name": true,
+    "lang": true
+   },
+   "exact": false,
+   "seconds": 2.803
+  },
+  {
+   "id": "P09-mr",
+   "lang": "mr",
+   "message": "दोन हजारांचे पेमेंट अडकले आहे, गिऱ्हाईक वैतागले आहे",
+   "gold": {
+    "intent": "payment_check",
+    "amount": 2000,
+    "day": null,
+    "name": null,
+    "lang": "mr"
+   },
+   "pred": {
+    "intent": "payment_check",
+    "amount": 2000,
+    "day": "today",
+    "name": null,
+    "lang": "mr"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": false,
+    "name": true,
+    "lang": true
+   },
+   "exact": false,
+   "seconds": 2.778
+  },
+  {
+   "id": "P09-en",
+   "lang": "en",
+   "message": "2000 ka payment atak gaya hai, customer pareshaan hai",
+   "gold": {
+    "intent": "payment_check",
+    "amount": 2000,
+    "day": null,
+    "name": null,
+    "lang": "en"
+   },
+   "pred": {
+    "intent": "payment_check",
+    "amount": 2000,
+    "day": "today",
+    "name": null,
+    "lang": "hi"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": false,
+    "name": true,
+    "lang": false
+   },
+   "exact": false,
+   "seconds": 2.772
+  },
+  {
+   "id": "P10-hi",
+   "lang": "hi",
+   "message": "₹600 का पेमेंट ग्राहक के फ़ोन पर पेंडिंग दिखा रहा है",
+   "gold": {
+    "intent": "payment_check",
+    "amount": 600,
+    "day": null,
+    "name": null,
+    "lang": "hi"
+   },
+   "pred": {
+    "intent": "payment_check",
+    "amount": 600,
+    "day": "today",
+    "name": null,
+    "lang": "hi"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": false,
+    "name": true,
+    "lang": true
+   },
+   "exact": false,
+   "seconds": 2.804
+  },
+  {
+   "id": "P10-mr",
+   "lang": "mr",
+   "message": "गिऱ्हाईकाच्या फोनवर ₹600 चे पेमेंट पेंडिंग दाखवत आहे",
+   "gold": {
+    "intent": "payment_check",
+    "amount": 600,
+    "day": null,
+    "name": null,
+    "lang": "mr"
+   },
+   "pred": {
+    "intent": "payment_check",
+    "amount": 600,
+    "day": "today",
+    "name": null,
+    "lang": "mr"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": false,
+    "name": true,
+    "lang": true
+   },
+   "exact": false,
+   "seconds": 2.788
+  },
+  {
+   "id": "P10-en",
+   "lang": "en",
+   "message": "customer's phone shows the 600 payment as pending",
+   "gold": {
+    "intent": "payment_check",
+    "amount": 600,
+    "day": null,
+    "name": null,
+    "lang": "en"
+   },
+   "pred": {
+    "intent": "payment_check",
+    "amount": 600,
+    "day": "today",
+    "name": null,
+    "lang": "en"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": false,
+    "name": true,
+    "lang": true
+   },
+   "exact": false,
+   "seconds": 2.757
+  },
+  {
+   "id": "P11-hi",
+   "lang": "hi",
+   "message": "875 रुपये का पेमेंट आया या अभी प्रोसेसिंग में है?",
+   "gold": {
+    "intent": "payment_check",
+    "amount": 875,
+    "day": null,
+    "name": null,
+    "lang": "hi"
+   },
+   "pred": {
+    "intent": "payment_check",
+    "amount": 875,
+    "day": "today",
+    "name": null,
+    "lang": "hi"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": false,
+    "name": true,
+    "lang": true
+   },
+   "exact": false,
+   "seconds": 2.773
+  },
+  {
+   "id": "P11-mr",
+   "lang": "mr",
+   "message": "875 रुपयांचे पेमेंट आले की अजून प्रोसेसिंगमध्ये आहे?",
+   "gold": {
+    "intent": "payment_check",
+    "amount": 875,
+    "day": null,
+    "name": null,
+    "lang": "mr"
+   },
+   "pred": {
+    "intent": "payment_check",
+    "amount": 875,
+    "day": "today",
+    "name": null,
+    "lang": "mr"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": false,
+    "name": true,
+    "lang": true
+   },
+   "exact": false,
+   "seconds": 2.783
+  },
+  {
+   "id": "P11-en",
+   "lang": "en",
+   "message": "Has the 875 payment come or is it still processing?",
+   "gold": {
+    "intent": "payment_check",
+    "amount": 875,
+    "day": null,
+    "name": null,
+    "lang": "en"
+   },
+   "pred": {
+    "intent": "payment_check",
+    "amount": 875,
+    "day": "today",
+    "name": null,
+    "lang": "en"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": false,
+    "name": true,
+    "lang": true
+   },
+   "exact": false,
+   "seconds": 2.775
+  },
+  {
+   "id": "P12-hi",
+   "lang": "hi",
+   "message": "ग्राहक कह रहा है 530 भेजे, ज़रा देखो",
+   "gold": {
+    "intent": "payment_check",
+    "amount": 530,
+    "day": null,
+    "name": null,
+    "lang": "hi"
+   },
+   "pred": {
+    "intent": "payment_check",
+    "amount": 530,
+    "day": "today",
+    "name": null,
+    "lang": "hi"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": false,
+    "name": true,
+    "lang": true
+   },
+   "exact": false,
+   "seconds": 2.783
+  },
+  {
+   "id": "P12-mr",
+   "lang": "mr",
+   "message": "गिऱ्हाईक म्हणतोय 530 पाठवले, जरा बघा",
+   "gold": {
+    "intent": "payment_check",
+    "amount": 530,
+    "day": null,
+    "name": null,
+    "lang": "mr"
+   },
+   "pred": {
+    "intent": "payment_check",
+    "amount": 530,
+    "day": "today",
+    "name": null,
+    "lang": "mr"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": false,
+    "name": true,
+    "lang": true
+   },
+   "exact": false,
+   "seconds": 2.756
+  },
+  {
+   "id": "P12-en",
+   "lang": "en",
+   "message": "customer claims he sent 530, please check",
+   "gold": {
+    "intent": "payment_check",
+    "amount": 530,
+    "day": null,
+    "name": null,
+    "lang": "en"
+   },
+   "pred": {
+    "intent": "dispute",
+    "amount": 530,
+    "day": null,
+    "name": null,
+    "lang": "en"
+   },
+   "ok": {
+    "intent": false,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": false,
+   "seconds": 2.754
+  },
+  {
+   "id": "P13-hi",
+   "lang": "hi",
+   "message": "अभी ढाई हज़ार का पेमेंट किया ग्राहक ने, आया क्या?",
+   "gold": {
+    "intent": "payment_check",
+    "amount": 2500,
+    "day": "today",
+    "name": null,
+    "lang": "hi"
+   },
+   "pred": {
+    "intent": "payment_check",
+    "amount": 2000,
+    "day": "today",
+    "name": null,
+    "lang": "hi"
+   },
+   "ok": {
+    "intent": true,
+    "amount": false,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": false,
+   "seconds": 2.782
+  },
+  {
+   "id": "P13-mr",
+   "lang": "mr",
+   "message": "आत्ता गिऱ्हाईकाने अडीच हजारांचे पेमेंट केले, आले का?",
+   "gold": {
+    "intent": "payment_check",
+    "amount": 2500,
+    "day": "today",
+    "name": null,
+    "lang": "mr"
+   },
+   "pred": {
+    "intent": "payment_check",
+    "amount": 1500,
+    "day": "today",
+    "name": null,
+    "lang": "hi"
+   },
+   "ok": {
+    "intent": true,
+    "amount": false,
+    "day": true,
+    "name": true,
+    "lang": false
+   },
+   "exact": false,
+   "seconds": 2.8
+  },
+  {
+   "id": "P13-en",
+   "lang": "en",
+   "message": "Customer just paid 2500 today, did it come?",
+   "gold": {
+    "intent": "payment_check",
+    "amount": 2500,
+    "day": "today",
+    "name": null,
+    "lang": "en"
+   },
+   "pred": {
+    "intent": "payment_check",
+    "amount": 2500,
+    "day": "today",
+    "name": null,
+    "lang": "en"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.799
+  },
+  {
+   "id": "P14-hi",
+   "lang": "hi",
+   "message": "पिछले हफ़्ते का 1500 का पेमेंट फेल हुआ था, ग्राहक को अभी तक पैसे वापस नहीं मिले",
+   "gold": {
+    "intent": "payment_check",
+    "amount": 1500,
+    "day": "earlier",
+    "name": null,
+    "lang": "hi"
+   },
+   "pred": {
+    "intent": "refund_request",
+    "amount": 1500,
+    "day": "earlier",
+    "name": null,
+    "lang": "hi"
+   },
+   "ok": {
+    "intent": false,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": false,
+   "seconds": 2.855
+  },
+  {
+   "id": "P14-mr",
+   "lang": "mr",
+   "message": "मागच्या आठवड्यातले 1500 चे पेमेंट फेल झाले होते, गिऱ्हाईकाला अजून पैसे परत मिळाले नाहीत",
+   "gold": {
+    "intent": "payment_check",
+    "amount": 1500,
+    "day": "earlier",
+    "name": null,
+    "lang": "mr"
+   },
+   "pred": {
+    "intent": "settlement_status",
+    "amount": 1500,
+    "day": "earlier",
+    "name": null,
+    "lang": "mr"
+   },
+   "ok": {
+    "intent": false,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": false,
+   "seconds": 2.884
+  },
+  {
+   "id": "P14-en",
+   "lang": "en",
+   "message": "Last week's 1500 payment failed and the customer still hasn't got the money back",
+   "gold": {
+    "intent": "payment_check",
+    "amount": 1500,
+    "day": "earlier",
+    "name": null,
+    "lang": "en"
+   },
+   "pred": {
+    "intent": "refund_request",
+    "amount": 1500,
+    "day": "earlier",
+    "name": null,
+    "lang": "en"
+   },
+   "ok": {
+    "intent": false,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": false,
+   "seconds": 2.793
+  },
+  {
+   "id": "P15-hi",
+   "lang": "hi",
+   "message": "नौ दिन पहले 720 का पेमेंट फँसा था, अभी तक कुछ नहीं हुआ",
+   "gold": {
+    "intent": "payment_check",
+    "amount": 720,
+    "day": "earlier",
+    "name": null,
+    "lang": "hi"
+   },
+   "pred": {
+    "intent": "payment_check",
+    "amount": 720,
+    "day": "earlier",
+    "name": null,
+    "lang": "hi"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.812
+  },
+  {
+   "id": "P15-mr",
+   "lang": "mr",
+   "message": "नऊ दिवसांपूर्वी 720 चे पेमेंट अडकले होते, अजून काहीच झाले नाही",
+   "gold": {
+    "intent": "payment_check",
+    "amount": 720,
+    "day": "earlier",
+    "name": null,
+    "lang": "mr"
+   },
+   "pred": {
+    "intent": "payment_check",
+    "amount": 720,
+    "day": "earlier",
+    "name": null,
+    "lang": "mr"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.804
+  },
+  {
+   "id": "P15-en",
+   "lang": "en",
+   "message": "a 720 payment got stuck 9 days ago, nothing has happened yet",
+   "gold": {
+    "intent": "payment_check",
+    "amount": 720,
+    "day": "earlier",
+    "name": null,
+    "lang": "en"
+   },
+   "pred": {
+    "intent": "payment_check",
+    "amount": 720,
+    "day": "earlier",
+    "name": null,
+    "lang": "en"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.784
+  },
+  {
+   "id": "S01-hi",
+   "lang": "hi",
+   "message": "कल का सेटलमेंट आया क्या?",
+   "gold": {
+    "intent": "settlement_status",
+    "amount": null,
+    "day": "yesterday",
+    "name": null,
+    "lang": "hi"
+   },
+   "pred": {
+    "intent": "settlement_status",
+    "amount": null,
+    "day": "yesterday",
+    "name": null,
+    "lang": "hi"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.724
+  },
+  {
+   "id": "S01-mr",
+   "lang": "mr",
+   "message": "कालचे सेटलमेंट आले का?",
+   "gold": {
+    "intent": "settlement_status",
+    "amount": null,
+    "day": "yesterday",
+    "name": null,
+    "lang": "mr"
+   },
+   "pred": {
+    "intent": "settlement_status",
+    "amount": null,
+    "day": "yesterday",
+    "name": null,
+    "lang": "hi"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": false
+   },
+   "exact": false,
+   "seconds": 2.743
+  },
+  {
+   "id": "S01-en",
+   "lang": "en",
+   "message": "Has yesterday's settlement come?",
+   "gold": {
+    "intent": "settlement_status",
+    "amount": null,
+    "day": "yesterday",
+    "name": null,
+    "lang": "en"
+   },
+   "pred": {
+    "intent": "settlement_status",
+    "amount": null,
+    "day": "yesterday",
+    "name": null,
+    "lang": "en"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.775
+  },
+  {
+   "id": "S02-hi",
+   "lang": "hi",
+   "message": "कल वाला मेरा पैसा बैंक में कब आएगा?",
+   "gold": {
+    "intent": "settlement_status",
+    "amount": null,
+    "day": "yesterday",
+    "name": null,
+    "lang": "hi"
+   },
+   "pred": {
+    "intent": "settlement_status",
+    "amount": null,
+    "day": "yesterday",
+    "name": null,
+    "lang": "hi"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.745
+  },
+  {
+   "id": "S02-mr",
+   "lang": "mr",
+   "message": "माझे कालचे पैसे बँकेत कधी येणार?",
+   "gold": {
+    "intent": "settlement_status",
+    "amount": null,
+    "day": "yesterday",
+    "name": null,
+    "lang": "mr"
+   },
+   "pred": {
+    "intent": "settlement_status",
+    "amount": null,
+    "day": "yesterday",
+    "name": null,
+    "lang": "mr"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.789
+  },
+  {
+   "id": "S02-en",
+   "lang": "en",
+   "message": "when will yesterday's money reach my bank?",
+   "gold": {
+    "intent": "settlement_status",
+    "amount": null,
+    "day": "yesterday",
+    "name": null,
+    "lang": "en"
+   },
+   "pred": {
+    "intent": "settlement_status",
+    "amount": null,
+    "day": "yesterday",
+    "name": null,
+    "lang": "en"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.735
+  },
+  {
+   "id": "S03-hi",
+   "lang": "hi",
+   "message": "सेटलमेंट का स्टेटस बताओ",
+   "gold": {
+    "intent": "settlement_status",
+    "amount": null,
+    "day": null,
+    "name": null,
+    "lang": "hi"
+   },
+   "pred": {
+    "intent": "settlement_status",
+    "amount": null,
+    "day": null,
+    "name": null,
+    "lang": "hi"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.744
+  },
+  {
+   "id": "S03-mr",
+   "lang": "mr",
+   "message": "सेटलमेंटचा स्टेटस सांगा",
+   "gold": {
+    "intent": "settlement_status",
+    "amount": null,
+    "day": null,
+    "name": null,
+    "lang": "mr"
+   },
+   "pred": {
+    "intent": "settlement_status",
+    "amount": null,
+    "day": null,
+    "name": null,
+    "lang": "hi"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": false
+   },
+   "exact": false,
+   "seconds": 2.737
+  },
+  {
+   "id": "S03-en",
+   "lang": "en",
+   "message": "settlement status please",
+   "gold": {
+    "intent": "settlement_status",
+    "amount": null,
+    "day": null,
+    "name": null,
+    "lang": "en"
+   },
+   "pred": {
+    "intent": "settlement_status",
+    "amount": null,
+    "day": null,
+    "name": null,
+    "lang": "en"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.72
+  },
+  {
+   "id": "S04-hi",
+   "lang": "hi",
+   "message": "कल का सेटलमेंट अभी तक नहीं आया",
+   "gold": {
+    "intent": "settlement_status",
+    "amount": null,
+    "day": "yesterday",
+    "name": null,
+    "lang": "hi"
+   },
+   "pred": {
+    "intent": "settlement_status",
+    "amount": null,
+    "day": "yesterday",
+    "name": null,
+    "lang": "hi"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.754
+  },
+  {
+   "id": "S04-mr",
+   "lang": "mr",
+   "message": "माझं कालचं सेटलमेंट अजून आलं नाही.",
+   "gold": {
+    "intent": "settlement_status",
+    "amount": null,
+    "day": "yesterday",
+    "name": null,
+    "lang": "mr"
+   },
+   "pred": {
+    "intent": "settlement_status",
+    "amount": null,
+    "day": "yesterday",
+    "name": null,
+    "lang": "mr"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.755
+  },
+  {
+   "id": "S04-en",
+   "lang": "en",
+   "message": "Yesterday's settlement still hasn't arrived",
+   "gold": {
+    "intent": "settlement_status",
+    "amount": null,
+    "day": "yesterday",
+    "name": null,
+    "lang": "en"
+   },
+   "pred": {
+    "intent": "settlement_status",
+    "amount": null,
+    "day": "yesterday",
+    "name": null,
+    "lang": "en"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.698
+  },
+  {
+   "id": "S05-hi",
+   "lang": "hi",
+   "message": "बैंक में कल के पैसे नहीं आए, थोक वाले को देना है",
+   "gold": {
+    "intent": "settlement_status",
+    "amount": null,
+    "day": "yesterday",
+    "name": null,
+    "lang": "hi"
+   },
+   "pred": {
+    "intent": "settlement_status",
+    "amount": null,
+    "day": "yesterday",
+    "name": null,
+    "lang": "hi"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.745
+  },
+  {
+   "id": "S05-mr",
+   "lang": "mr",
+   "message": "बँकेत कालचे पैसे आले नाहीत, घाऊक व्यापाऱ्याला द्यायचे आहेत",
+   "gold": {
+    "intent": "settlement_status",
+    "amount": null,
+    "day": "yesterday",
+    "name": null,
+    "lang": "mr"
+   },
+   "pred": {
+    "intent": "settlement_status",
+    "amount": null,
+    "day": "yesterday",
+    "name": null,
+    "lang": "mr"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.778
+  },
+  {
+   "id": "S05-en",
+   "lang": "en",
+   "message": "kal ke paise bank mein nahi aaye, wholesaler ko dena hai",
+   "gold": {
+    "intent": "settlement_status",
+    "amount": null,
+    "day": "yesterday",
+    "name": null,
+    "lang": "en"
+   },
+   "pred": {
+    "intent": "payout_change",
+    "amount": null,
+    "day": "yesterday",
+    "name": null,
+    "lang": "hi"
+   },
+   "ok": {
+    "intent": false,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": false
+   },
+   "exact": false,
+   "seconds": 2.777
+  },
+  {
+   "id": "S06-hi",
+   "lang": "hi",
+   "message": "पेआउट फेल हो गया क्या? पैसा नहीं दिखा",
+   "gold": {
+    "intent": "settlement_status",
+    "amount": null,
+    "day": null,
+    "name": null,
+    "lang": "hi"
+   },
+   "pred": {
+    "intent": "payout_change",
+    "amount": null,
+    "day": "today",
+    "name": null,
+    "lang": "hi"
+   },
+   "ok": {
+    "intent": false,
+    "amount": true,
+    "day": false,
+    "name": true,
+    "lang": true
+   },
+   "exact": false,
+   "seconds": 2.744
+  },
+  {
+   "id": "S06-mr",
+   "lang": "mr",
+   "message": "पेआउट फेल झाले का? पैसे दिसत नाहीत",
+   "gold": {
+    "intent": "settlement_status",
+    "amount": null,
+    "day": null,
+    "name": null,
+    "lang": "mr"
+   },
+   "pred": {
+    "intent": "payout_change",
+    "amount": null,
+    "day": "today",
+    "name": null,
+    "lang": "mr"
+   },
+   "ok": {
+    "intent": false,
+    "amount": true,
+    "day": false,
+    "name": true,
+    "lang": true
+   },
+   "exact": false,
+   "seconds": 2.735
+  },
+  {
+   "id": "S06-en",
+   "lang": "en",
+   "message": "did my payout fail? I can't see the money",
+   "gold": {
+    "intent": "settlement_status",
+    "amount": null,
+    "day": null,
+    "name": null,
+    "lang": "en"
+   },
+   "pred": {
+    "intent": "payout_change",
+    "amount": null,
+    "day": null,
+    "name": null,
+    "lang": "en"
+   },
+   "ok": {
+    "intent": false,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": false,
+   "seconds": 2.705
+  },
+  {
+   "id": "S07-hi",
+   "lang": "hi",
+   "message": "कल का सेटलमेंट नहीं आया, मैंने परसों नया बैंक खाता जोड़ा था",
+   "gold": {
+    "intent": "settlement_status",
+    "amount": null,
+    "day": "yesterday",
+    "name": null,
+    "lang": "hi"
+   },
+   "pred": {
+    "intent": "settlement_status",
+    "amount": null,
+    "day": "yesterday",
+    "name": null,
+    "lang": "hi"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.785
+  },
+  {
+   "id": "S07-mr",
+   "lang": "mr",
+   "message": "कालचे सेटलमेंट आले नाही, मी परवा नवीन बँक खाते जोडले होते",
+   "gold": {
+    "intent": "settlement_status",
+    "amount": null,
+    "day": "yesterday",
+    "name": null,
+    "lang": "mr"
+   },
+   "pred": {
+    "intent": "settlement_status",
+    "amount": null,
+    "day": "yesterday",
+    "name": null,
+    "lang": "mr"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.766
+  },
+  {
+   "id": "S07-en",
+   "lang": "en",
+   "message": "yesterday's settlement didn't come, I added a new bank account 2 days ago",
+   "gold": {
+    "intent": "settlement_status",
+    "amount": null,
+    "day": "yesterday",
+    "name": null,
+    "lang": "en"
+   },
+   "pred": {
+    "intent": "settlement_status",
+    "amount": null,
+    "day": "yesterday",
+    "name": null,
+    "lang": "en"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.741
+  },
+  {
+   "id": "S08-hi",
+   "lang": "hi",
+   "message": "पैसे बैंक में नहीं आए",
+   "gold": {
+    "intent": "settlement_status",
+    "amount": null,
+    "day": null,
+    "name": null,
+    "lang": "hi"
+   },
+   "pred": {
+    "intent": "settlement_status",
+    "amount": null,
+    "day": null,
+    "name": null,
+    "lang": "hi"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.722
+  },
+  {
+   "id": "S08-mr",
+   "lang": "mr",
+   "message": "पैसे बँकेत आले नाहीत",
+   "gold": {
+    "intent": "settlement_status",
+    "amount": null,
+    "day": null,
+    "name": null,
+    "lang": "mr"
+   },
+   "pred": {
+    "intent": "settlement_status",
+    "amount": null,
+    "day": null,
+    "name": null,
+    "lang": "mr"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.69
+  },
+  {
+   "id": "S08-en",
+   "lang": "en",
+   "message": "money not in bank yet",
+   "gold": {
+    "intent": "settlement_status",
+    "amount": null,
+    "day": null,
+    "name": null,
+    "lang": "en"
+   },
+   "pred": {
+    "intent": "settlement_status",
+    "amount": null,
+    "day": null,
+    "name": null,
+    "lang": "en"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.689
+  },
+  {
+   "id": "S09-hi",
+   "lang": "hi",
+   "message": "आज का सेटलमेंट कब तक आएगा?",
+   "gold": {
+    "intent": "settlement_status",
+    "amount": null,
+    "day": "today",
+    "name": null,
+    "lang": "hi"
+   },
+   "pred": {
+    "intent": "settlement_status",
+    "amount": null,
+    "day": "today",
+    "name": null,
+    "lang": "hi"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.708
+  },
+  {
+   "id": "S09-mr",
+   "lang": "mr",
+   "message": "आजचे सेटलमेंट कधीपर्यंत येईल?",
+   "gold": {
+    "intent": "settlement_status",
+    "amount": null,
+    "day": "today",
+    "name": null,
+    "lang": "mr"
+   },
+   "pred": {
+    "intent": "settlement_status",
+    "amount": null,
+    "day": "today",
+    "name": null,
+    "lang": "hi"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": false
+   },
+   "exact": false,
+   "seconds": 2.75
+  },
+  {
+   "id": "S09-en",
+   "lang": "en",
+   "message": "by when will today's settlement come?",
+   "gold": {
+    "intent": "settlement_status",
+    "amount": null,
+    "day": "today",
+    "name": null,
+    "lang": "en"
+   },
+   "pred": {
+    "intent": "settlement_status",
+    "amount": null,
+    "day": "today",
+    "name": null,
+    "lang": "en"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.72
+  },
+  {
+   "id": "S10-hi",
+   "lang": "hi",
+   "message": "कल का पैसा अभी प्रोसेस में है क्या?",
+   "gold": {
+    "intent": "settlement_status",
+    "amount": null,
+    "day": "yesterday",
+    "name": null,
+    "lang": "hi"
+   },
+   "pred": {
+    "intent": "payment_check",
+    "amount": null,
+    "day": "yesterday",
+    "name": null,
+    "lang": "hi"
+   },
+   "ok": {
+    "intent": false,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": false,
+   "seconds": 2.717
+  },
+  {
+   "id": "S10-mr",
+   "lang": "mr",
+   "message": "कालचे पैसे अजून प्रोसेसमध्ये आहेत का?",
+   "gold": {
+    "intent": "settlement_status",
+    "amount": null,
+    "day": "yesterday",
+    "name": null,
+    "lang": "mr"
+   },
+   "pred": {
+    "intent": "payment_check",
+    "amount": null,
+    "day": "yesterday",
+    "name": null,
+    "lang": "hi"
+   },
+   "ok": {
+    "intent": false,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": false
+   },
+   "exact": false,
+   "seconds": 2.716
+  },
+  {
+   "id": "S10-en",
+   "lang": "en",
+   "message": "is yesterday's money still processing?",
+   "gold": {
+    "intent": "settlement_status",
+    "amount": null,
+    "day": "yesterday",
+    "name": null,
+    "lang": "en"
+   },
+   "pred": {
+    "intent": "payment_check",
+    "amount": null,
+    "day": "yesterday",
+    "name": null,
+    "lang": "en"
+   },
+   "ok": {
+    "intent": false,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": false,
+   "seconds": 2.718
+  },
+  {
+   "id": "U01-hi",
+   "lang": "hi",
+   "message": "रमेश के ₹500 बाकी हैं, रिमाइंडर भेज दो",
+   "gold": {
+    "intent": "udhaar_reminder",
+    "amount": 500,
+    "day": null,
+    "name": "Ramesh",
+    "lang": "hi"
+   },
+   "pred": {
+    "intent": "udhaar_reminder",
+    "amount": 500,
+    "day": null,
+    "name": "Ramesh",
+    "lang": "hi"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.86
+  },
+  {
+   "id": "U01-mr",
+   "lang": "mr",
+   "message": "रमेशचे ₹500 बाकी आहेत, रिमाइंडर पाठवा",
+   "gold": {
+    "intent": "udhaar_reminder",
+    "amount": 500,
+    "day": null,
+    "name": "Ramesh",
+    "lang": "mr"
+   },
+   "pred": {
+    "intent": "udhaar_reminder",
+    "amount": 500,
+    "day": null,
+    "name": "Ramesh",
+    "lang": "mr"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.826
+  },
+  {
+   "id": "U01-en",
+   "lang": "en",
+   "message": "Ramesh ke 500 baaki hain, reminder bhej do",
+   "gold": {
+    "intent": "udhaar_reminder",
+    "amount": 500,
+    "day": null,
+    "name": "Ramesh",
+    "lang": "en"
+   },
+   "pred": {
+    "intent": "udhaar_reminder",
+    "amount": 500,
+    "day": null,
+    "name": "Ramesh",
+    "lang": "hi"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": false
+   },
+   "exact": false,
+   "seconds": 2.812
+  },
+  {
+   "id": "U02-hi",
+   "lang": "hi",
+   "message": "सुनील से बारह सौ पचास लेने हैं, उसे याद दिला दो",
+   "gold": {
+    "intent": "udhaar_reminder",
+    "amount": 1250,
+    "day": null,
+    "name": "Sunil",
+    "lang": "hi"
+   },
+   "pred": {
+    "intent": "udhaar_reminder",
+    "amount": 1250,
+    "day": null,
+    "name": "Sunil",
+    "lang": "hi"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.865
+  },
+  {
+   "id": "U02-mr",
+   "lang": "mr",
+   "message": "सुनीलकडून बाराशे पन्नास घ्यायचे आहेत, त्याला आठवण करून द्या",
+   "gold": {
+    "intent": "udhaar_reminder",
+    "amount": 1250,
+    "day": null,
+    "name": "Sunil",
+    "lang": "mr"
+   },
+   "pred": {
+    "intent": "udhaar_reminder",
+    "amount": 1250,
+    "day": null,
+    "name": "Sunil",
+    "lang": "mr"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.829
+  },
+  {
+   "id": "U02-en",
+   "lang": "en",
+   "message": "remind Sunil about the 1250 he owes",
+   "gold": {
+    "intent": "udhaar_reminder",
+    "amount": 1250,
+    "day": null,
+    "name": "Sunil",
+    "lang": "en"
+   },
+   "pred": {
+    "intent": "udhaar_reminder",
+    "amount": 1250,
+    "day": null,
+    "name": "Sunil",
+    "lang": "en"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.818
+  },
+  {
+   "id": "U03-hi",
+   "lang": "hi",
+   "message": "प्रिया को उधार का मैसेज भेजो",
+   "gold": {
+    "intent": "udhaar_reminder",
+    "amount": null,
+    "day": null,
+    "name": "Priya",
+    "lang": "hi"
+   },
+   "pred": {
+    "intent": "udhaar_reminder",
+    "amount": null,
+    "day": null,
+    "name": "Priya",
+    "lang": "hi"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.752
+  },
+  {
+   "id": "U03-mr",
+   "lang": "mr",
+   "message": "प्रियाला उधारीचा मेसेज पाठवा",
+   "gold": {
+    "intent": "udhaar_reminder",
+    "amount": null,
+    "day": null,
+    "name": "Priya",
+    "lang": "mr"
+   },
+   "pred": {
+    "intent": "udhaar_reminder",
+    "amount": null,
+    "day": null,
+    "name": "Priya",
+    "lang": "mr"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.754
+  },
+  {
+   "id": "U03-en",
+   "lang": "en",
+   "message": "send Priya a reminder for her udhaar",
+   "gold": {
+    "intent": "udhaar_reminder",
+    "amount": null,
+    "day": null,
+    "name": "Priya",
+    "lang": "en"
+   },
+   "pred": {
+    "intent": "udhaar_reminder",
+    "amount": null,
+    "day": null,
+    "name": "Priya",
+    "lang": "en"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.739
+  },
+  {
+   "id": "U04-hi",
+   "lang": "hi",
+   "message": "अनिल भैया के 750 रुपये अटके हैं, लिंक भेज दो",
+   "gold": {
+    "intent": "udhaar_reminder",
+    "amount": 750,
+    "day": null,
+    "name": "Anil",
+    "lang": "hi"
+   },
+   "pred": {
+    "intent": "payout_change",
+    "amount": 750,
+    "day": null,
+    "name": "Anil",
+    "lang": "hi"
+   },
+   "ok": {
+    "intent": false,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": false,
+   "seconds": 2.798
+  },
+  {
+   "id": "U04-mr",
+   "lang": "mr",
+   "message": "अनिलभाऊंचे 750 रुपये अडकले आहेत, लिंक पाठवा",
+   "gold": {
+    "intent": "udhaar_reminder",
+    "amount": 750,
+    "day": null,
+    "name": "Anil",
+    "lang": "mr"
+   },
+   "pred": {
+    "intent": "loan_request",
+    "amount": 750,
+    "day": null,
+    "name": "Anilbhai",
+    "lang": "mr"
+   },
+   "ok": {
+    "intent": false,
+    "amount": true,
+    "day": true,
+    "name": false,
+    "lang": true
+   },
+   "exact": false,
+   "seconds": 2.825
+  },
+  {
+   "id": "U04-en",
+   "lang": "en",
+   "message": "Anil bhai ke 750 atke hain, link bhej do",
+   "gold": {
+    "intent": "udhaar_reminder",
+    "amount": 750,
+    "day": null,
+    "name": "Anil",
+    "lang": "en"
+   },
+   "pred": {
+    "intent": "payout_change",
+    "amount": 750,
+    "day": null,
+    "name": "Anil",
+    "lang": "hi"
+   },
+   "ok": {
+    "intent": false,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": false
+   },
+   "exact": false,
+   "seconds": 2.792
+  },
+  {
+   "id": "U05-hi",
+   "lang": "hi",
+   "message": "कविता जी को पेमेंट रिमाइंडर भेज दो",
+   "gold": {
+    "intent": "udhaar_reminder",
+    "amount": null,
+    "day": null,
+    "name": "Kavita",
+    "lang": "hi"
+   },
+   "pred": {
+    "intent": "payment_check",
+    "amount": null,
+    "day": null,
+    "name": "Kavita",
+    "lang": "hi"
+   },
+   "ok": {
+    "intent": false,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": false,
+   "seconds": 2.766
+  },
+  {
+   "id": "U05-mr",
+   "lang": "mr",
+   "message": "कविताताईंना पेमेंट रिमाइंडर पाठवा",
+   "gold": {
+    "intent": "udhaar_reminder",
+    "amount": null,
+    "day": null,
+    "name": "Kavita",
+    "lang": "mr"
+   },
+   "pred": {
+    "intent": "payment_check",
+    "amount": null,
+    "day": null,
+    "name": "Kavitai",
+    "lang": "mr"
+   },
+   "ok": {
+    "intent": false,
+    "amount": true,
+    "day": true,
+    "name": false,
+    "lang": true
+   },
+   "exact": false,
+   "seconds": 2.737
+  },
+  {
+   "id": "U05-en",
+   "lang": "en",
+   "message": "please send Kavita a payment reminder",
+   "gold": {
+    "intent": "udhaar_reminder",
+    "amount": null,
+    "day": null,
+    "name": "Kavita",
+    "lang": "en"
+   },
+   "pred": {
+    "intent": "payment_check",
+    "amount": null,
+    "day": null,
+    "name": "Kavita",
+    "lang": "en"
+   },
+   "ok": {
+    "intent": false,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": false,
+   "seconds": 2.726
+  },
+  {
+   "id": "U06-hi",
+   "lang": "hi",
+   "message": "महेश का 180 का हिसाब बाकी है, याद दिलाओ",
+   "gold": {
+    "intent": "udhaar_reminder",
+    "amount": 180,
+    "day": null,
+    "name": "Mahesh",
+    "lang": "hi"
+   },
+   "pred": {
+    "intent": "udhaar_reminder",
+    "amount": 180,
+    "day": null,
+    "name": "Mahesh",
+    "lang": "hi"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.819
+  },
+  {
+   "id": "U06-mr",
+   "lang": "mr",
+   "message": "महेशचा 180 चा हिशोब बाकी आहे, आठवण करून द्या",
+   "gold": {
+    "intent": "udhaar_reminder",
+    "amount": 180,
+    "day": null,
+    "name": "Mahesh",
+    "lang": "mr"
+   },
+   "pred": {
+    "intent": "udhaar_reminder",
+    "amount": 180,
+    "day": null,
+    "name": "Mahesh",
+    "lang": "mr"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.825
+  },
+  {
+   "id": "U06-en",
+   "lang": "en",
+   "message": "Mahesh still owes 180, remind him",
+   "gold": {
+    "intent": "udhaar_reminder",
+    "amount": 180,
+    "day": null,
+    "name": "Mahesh",
+    "lang": "en"
+   },
+   "pred": {
+    "intent": "udhaar_reminder",
+    "amount": 180,
+    "day": null,
+    "name": "Mahesh",
+    "lang": "en"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.821
+  },
+  {
+   "id": "U07-hi",
+   "lang": "hi",
+   "message": "दीपक को बोलो 960 भेज दे",
+   "gold": {
+    "intent": "udhaar_reminder",
+    "amount": 960,
+    "day": null,
+    "name": "Deepak",
+    "lang": "hi"
+   },
+   "pred": {
+    "intent": "payout_change",
+    "amount": 960,
+    "day": null,
+    "name": "Dipak",
+    "lang": "hi"
+   },
+   "ok": {
+    "intent": false,
+    "amount": true,
+    "day": true,
+    "name": false,
+    "lang": true
+   },
+   "exact": false,
+   "seconds": 2.818
+  },
+  {
+   "id": "U07-mr",
+   "lang": "mr",
+   "message": "दीपकला सांगा 960 पाठव",
+   "gold": {
+    "intent": "udhaar_reminder",
+    "amount": 960,
+    "day": null,
+    "name": "Deepak",
+    "lang": "mr"
+   },
+   "pred": {
+    "intent": "human_request",
+    "amount": 960,
+    "day": null,
+    "name": "Dipak",
+    "lang": "mr"
+   },
+   "ok": {
+    "intent": false,
+    "amount": true,
+    "day": true,
+    "name": false,
+    "lang": true
+   },
+   "exact": false,
+   "seconds": 2.794
+  },
+  {
+   "id": "U07-en",
+   "lang": "en",
+   "message": "tell Deepak to send the 960",
+   "gold": {
+    "intent": "udhaar_reminder",
+    "amount": 960,
+    "day": null,
+    "name": "Deepak",
+    "lang": "en"
+   },
+   "pred": {
+    "intent": "human_request",
+    "amount": 960,
+    "day": null,
+    "name": "Deepak",
+    "lang": "en"
+   },
+   "ok": {
+    "intent": false,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": false,
+   "seconds": 2.768
+  },
+  {
+   "id": "U08-hi",
+   "lang": "hi",
+   "message": "विकास को रिमाइंडर भेजो",
+   "gold": {
+    "intent": "udhaar_reminder",
+    "amount": null,
+    "day": null,
+    "name": "Vikas",
+    "lang": "hi"
+   },
+   "pred": {
+    "intent": "udhaar_reminder",
+    "amount": null,
+    "day": null,
+    "name": "Vikas",
+    "lang": "hi"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.858
+  },
+  {
+   "id": "U08-mr",
+   "lang": "mr",
+   "message": "विकासला रिमाइंडर पाठवा",
+   "gold": {
+    "intent": "udhaar_reminder",
+    "amount": null,
+    "day": null,
+    "name": "Vikas",
+    "lang": "mr"
+   },
+   "pred": {
+    "intent": "udhaar_reminder",
+    "amount": null,
+    "day": null,
+    "name": "Vikas",
+    "lang": "mr"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.841
+  },
+  {
+   "id": "U08-en",
+   "lang": "en",
+   "message": "send Vikas a reminder",
+   "gold": {
+    "intent": "udhaar_reminder",
+    "amount": null,
+    "day": null,
+    "name": "Vikas",
+    "lang": "en"
+   },
+   "pred": {
+    "intent": "udhaar_reminder",
+    "amount": null,
+    "day": null,
+    "name": "Vikas",
+    "lang": "en"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.837
+  },
+  {
+   "id": "U09-hi",
+   "lang": "hi",
+   "message": "गणेश के 400 बाकी हैं, मैसेज कर दो",
+   "gold": {
+    "intent": "udhaar_reminder",
+    "amount": 400,
+    "day": null,
+    "name": "Ganesh",
+    "lang": "hi"
+   },
+   "pred": {
+    "intent": "udhaar_reminder",
+    "amount": 400,
+    "day": null,
+    "name": "Ganesh",
+    "lang": "hi"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.918
+  },
+  {
+   "id": "U09-mr",
+   "lang": "mr",
+   "message": "गणेशचे 400 बाकी आहेत, मेसेज करा",
+   "gold": {
+    "intent": "udhaar_reminder",
+    "amount": 400,
+    "day": null,
+    "name": "Ganesh",
+    "lang": "mr"
+   },
+   "pred": {
+    "intent": "udhaar_reminder",
+    "amount": 400,
+    "day": null,
+    "name": "Ganesh",
+    "lang": "mr"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.847
+  },
+  {
+   "id": "U09-en",
+   "lang": "en",
+   "message": "Ganesh owes 400, message him",
+   "gold": {
+    "intent": "udhaar_reminder",
+    "amount": 400,
+    "day": null,
+    "name": "Ganesh",
+    "lang": "en"
+   },
+   "pred": {
+    "intent": "udhaar_reminder",
+    "amount": 400,
+    "day": null,
+    "name": "Ganesh",
+    "lang": "en"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.825
+  },
+  {
+   "id": "U10-hi",
+   "lang": "hi",
+   "message": "रमेश को एक और रिमाइंडर भेज दो",
+   "gold": {
+    "intent": "udhaar_reminder",
+    "amount": null,
+    "day": null,
+    "name": "Ramesh",
+    "lang": "hi"
+   },
+   "pred": {
+    "intent": "udhaar_reminder",
+    "amount": null,
+    "day": null,
+    "name": "Ramesh",
+    "lang": "hi"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.784
+  },
+  {
+   "id": "U10-mr",
+   "lang": "mr",
+   "message": "रमेशला अजून एक रिमाइंडर पाठवा",
+   "gold": {
+    "intent": "udhaar_reminder",
+    "amount": null,
+    "day": null,
+    "name": "Ramesh",
+    "lang": "mr"
+   },
+   "pred": {
+    "intent": "udhaar_reminder",
+    "amount": null,
+    "day": null,
+    "name": "Ramesh",
+    "lang": "mr"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.788
+  },
+  {
+   "id": "U10-en",
+   "lang": "en",
+   "message": "send Ramesh one more reminder",
+   "gold": {
+    "intent": "udhaar_reminder",
+    "amount": null,
+    "day": null,
+    "name": "Ramesh",
+    "lang": "en"
+   },
+   "pred": {
+    "intent": "udhaar_reminder",
+    "amount": null,
+    "day": null,
+    "name": "Ramesh",
+    "lang": "en"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.776
+  },
+  {
+   "id": "E01-hi",
+   "lang": "hi",
+   "message": "ग्राहक के 6500 कट गए पर मेरे पास नहीं आए",
+   "gold": {
+    "intent": "payment_check",
+    "amount": 6500,
+    "day": null,
+    "name": null,
+    "lang": "hi"
+   },
+   "pred": {
+    "intent": "payout_change",
+    "amount": 6500,
+    "day": "today",
+    "name": null,
+    "lang": "hi"
+   },
+   "ok": {
+    "intent": false,
+    "amount": true,
+    "day": false,
+    "name": true,
+    "lang": true
+   },
+   "exact": false,
+   "seconds": 2.792
+  },
+  {
+   "id": "E01-mr",
+   "lang": "mr",
+   "message": "गिऱ्हाईकाचे 6500 कापले गेले पण माझ्याकडे आले नाहीत",
+   "gold": {
+    "intent": "payment_check",
+    "amount": 6500,
+    "day": null,
+    "name": null,
+    "lang": "mr"
+   },
+   "pred": {
+    "intent": "payout_change",
+    "amount": 6500,
+    "day": "yesterday",
+    "name": null,
+    "lang": "mr"
+   },
+   "ok": {
+    "intent": false,
+    "amount": true,
+    "day": false,
+    "name": true,
+    "lang": true
+   },
+   "exact": false,
+   "seconds": 2.798
+  },
+  {
+   "id": "E01-en",
+   "lang": "en",
+   "message": "customer's 6500 got debited but I didn't receive it",
+   "gold": {
+    "intent": "payment_check",
+    "amount": 6500,
+    "day": null,
+    "name": null,
+    "lang": "en"
+   },
+   "pred": {
+    "intent": "dispute",
+    "amount": 6500,
+    "day": "today",
+    "name": null,
+    "lang": "en"
+   },
+   "ok": {
+    "intent": false,
+    "amount": true,
+    "day": false,
+    "name": true,
+    "lang": true
+   },
+   "exact": false,
+   "seconds": 2.742
+  },
+  {
+   "id": "E02-hi",
+   "lang": "hi",
+   "message": "बारह हज़ार का पेमेंट फेल हो गया",
+   "gold": {
+    "intent": "payment_check",
+    "amount": 12000,
+    "day": null,
+    "name": null,
+    "lang": "hi"
+   },
+   "pred": {
+    "intent": "payment_check",
+    "amount": 12000,
+    "day": "today",
+    "name": null,
+    "lang": "hi"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": false,
+    "name": true,
+    "lang": true
+   },
+   "exact": false,
+   "seconds": 2.806
+  },
+  {
+   "id": "E02-mr",
+   "lang": "mr",
+   "message": "बारा हजारांचे पेमेंट फेल झाले",
+   "gold": {
+    "intent": "payment_check",
+    "amount": 12000,
+    "day": null,
+    "name": null,
+    "lang": "mr"
+   },
+   "pred": {
+    "intent": "payment_check",
+    "amount": 12000,
+    "day": "today",
+    "name": null,
+    "lang": "hi"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": false,
+    "name": true,
+    "lang": false
+   },
+   "exact": false,
+   "seconds": 2.796
+  },
+  {
+   "id": "E02-en",
+   "lang": "en",
+   "message": "12000 payment failed",
+   "gold": {
+    "intent": "payment_check",
+    "amount": 12000,
+    "day": null,
+    "name": null,
+    "lang": "en"
+   },
+   "pred": {
+    "intent": "payment_check",
+    "amount": 12000,
+    "day": "today",
+    "name": null,
+    "lang": "en"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": false,
+    "name": true,
+    "lang": true
+   },
+   "exact": false,
+   "seconds": 2.799
+  },
+  {
+   "id": "E03-hi",
+   "lang": "hi",
+   "message": "8000 का पेमेंट पेंडिंग है",
+   "gold": {
+    "intent": "payment_check",
+    "amount": 8000,
+    "day": null,
+    "name": null,
+    "lang": "hi"
+   },
+   "pred": {
+    "intent": "payment_check",
+    "amount": 8000,
+    "day": null,
+    "name": null,
+    "lang": "hi"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.777
+  },
+  {
+   "id": "E03-mr",
+   "lang": "mr",
+   "message": "8000 चे पेमेंट पेंडिंग आहे",
+   "gold": {
+    "intent": "payment_check",
+    "amount": 8000,
+    "day": null,
+    "name": null,
+    "lang": "mr"
+   },
+   "pred": {
+    "intent": "payment_check",
+    "amount": 8000,
+    "day": null,
+    "name": null,
+    "lang": "hi"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": false
+   },
+   "exact": false,
+   "seconds": 2.768
+  },
+  {
+   "id": "E03-en",
+   "lang": "en",
+   "message": "8000 payment is pending",
+   "gold": {
+    "intent": "payment_check",
+    "amount": 8000,
+    "day": null,
+    "name": null,
+    "lang": "en"
+   },
+   "pred": {
+    "intent": "payment_check",
+    "amount": 8000,
+    "day": null,
+    "name": null,
+    "lang": "en"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.743
+  },
+  {
+   "id": "E04-hi",
+   "lang": "hi",
+   "message": "मुझे किसी इंसान से बात करनी है",
+   "gold": {
+    "intent": "human_request",
+    "amount": null,
+    "day": null,
+    "name": null,
+    "lang": "hi"
+   },
+   "pred": {
+    "intent": "human_request",
+    "amount": null,
+    "day": null,
+    "name": null,
+    "lang": "hi"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.668
+  },
+  {
+   "id": "E04-mr",
+   "lang": "mr",
+   "message": "मला एखाद्या माणसाशी बोलायचे आहे",
+   "gold": {
+    "intent": "human_request",
+    "amount": null,
+    "day": null,
+    "name": null,
+    "lang": "mr"
+   },
+   "pred": {
+    "intent": "human_request",
+    "amount": null,
+    "day": null,
+    "name": null,
+    "lang": "mr"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.655
+  },
+  {
+   "id": "E04-en",
+   "lang": "en",
+   "message": "I want to talk to a real person",
+   "gold": {
+    "intent": "human_request",
+    "amount": null,
+    "day": null,
+    "name": null,
+    "lang": "en"
+   },
+   "pred": {
+    "intent": "human_request",
+    "amount": null,
+    "day": null,
+    "name": null,
+    "lang": "en"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.657
+  },
+  {
+   "id": "E05-hi",
+   "lang": "hi",
+   "message": "तुम लोग कुछ नहीं करते, मैनेजर से बात कराओ!",
+   "gold": {
+    "intent": "human_request",
+    "amount": null,
+    "day": null,
+    "name": null,
+    "lang": "hi"
+   },
+   "pred": {
+    "intent": "human_request",
+    "amount": null,
+    "day": null,
+    "name": null,
+    "lang": "hi"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.665
+  },
+  {
+   "id": "E05-mr",
+   "lang": "mr",
+   "message": "तुम्ही लोक काहीच करत नाही, मॅनेजरशी बोलणे करून द्या!",
+   "gold": {
+    "intent": "human_request",
+    "amount": null,
+    "day": null,
+    "name": null,
+    "lang": "mr"
+   },
+   "pred": {
+    "intent": "human_request",
+    "amount": null,
+    "day": null,
+    "name": null,
+    "lang": "mr"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.753
+  },
+  {
+   "id": "E05-en",
+   "lang": "en",
+   "message": "You people never fix anything, connect me to a manager!",
+   "gold": {
+    "intent": "human_request",
+    "amount": null,
+    "day": null,
+    "name": null,
+    "lang": "en"
+   },
+   "pred": {
+    "intent": "human_request",
+    "amount": null,
+    "day": null,
+    "name": null,
+    "lang": "en"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.666
+  },
+  {
+   "id": "E06-hi",
+   "lang": "hi",
+   "message": "मुझे दुकान के लिए 50 हज़ार का लोन चाहिए",
+   "gold": {
+    "intent": "loan_request",
+    "amount": 50000,
+    "day": null,
+    "name": null,
+    "lang": "hi"
+   },
+   "pred": {
+    "intent": "loan_request",
+    "amount": 50000,
+    "day": null,
+    "name": null,
+    "lang": "hi"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.756
+  },
+  {
+   "id": "E06-mr",
+   "lang": "mr",
+   "message": "मला दुकानासाठी 50 हजारांचे कर्ज हवे आहे",
+   "gold": {
+    "intent": "loan_request",
+    "amount": 50000,
+    "day": null,
+    "name": null,
+    "lang": "mr"
+   },
+   "pred": {
+    "intent": "loan_request",
+    "amount": 50000,
+    "day": null,
+    "name": null,
+    "lang": "mr"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.756
+  },
+  {
+   "id": "E06-en",
+   "lang": "en",
+   "message": "I need a 50k loan for my shop",
+   "gold": {
+    "intent": "loan_request",
+    "amount": 50000,
+    "day": null,
+    "name": null,
+    "lang": "en"
+   },
+   "pred": {
+    "intent": "loan_request",
+    "amount": 50000,
+    "day": null,
+    "name": null,
+    "lang": "en"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.761
+  },
+  {
+   "id": "E07-hi",
+   "lang": "hi",
+   "message": "क्या मुझे बिज़नेस लोन मिल सकता है?",
+   "gold": {
+    "intent": "loan_request",
+    "amount": null,
+    "day": null,
+    "name": null,
+    "lang": "hi"
+   },
+   "pred": {
+    "intent": "loan_request",
+    "amount": null,
+    "day": null,
+    "name": null,
+    "lang": "hi"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.705
+  },
+  {
+   "id": "E07-mr",
+   "lang": "mr",
+   "message": "मला बिझनेस लोन मिळू शकेल का?",
+   "gold": {
+    "intent": "loan_request",
+    "amount": null,
+    "day": null,
+    "name": null,
+    "lang": "mr"
+   },
+   "pred": {
+    "intent": "loan_request",
+    "amount": null,
+    "day": null,
+    "name": null,
+    "lang": "mr"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.69
+  },
+  {
+   "id": "E07-en",
+   "lang": "en",
+   "message": "Can I get a business loan?",
+   "gold": {
+    "intent": "loan_request",
+    "amount": null,
+    "day": null,
+    "name": null,
+    "lang": "en"
+   },
+   "pred": {
+    "intent": "loan_request",
+    "amount": null,
+    "day": null,
+    "name": null,
+    "lang": "en"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.678
+  },
+  {
+   "id": "E08-hi",
+   "lang": "hi",
+   "message": "साउंडबॉक्स बोल ही नहीं रहा, आज सुबह से बंद है",
+   "gold": {
+    "intent": "device_issue",
+    "amount": null,
+    "day": "today",
+    "name": null,
+    "lang": "hi"
+   },
+   "pred": {
+    "intent": "device_issue",
+    "amount": null,
+    "day": "today",
+    "name": null,
+    "lang": "hi"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.685
+  },
+  {
+   "id": "E08-mr",
+   "lang": "mr",
+   "message": "साउंडबॉक्स बोलतच नाही, आज सकाळपासून बंद आहे",
+   "gold": {
+    "intent": "device_issue",
+    "amount": null,
+    "day": "today",
+    "name": null,
+    "lang": "mr"
+   },
+   "pred": {
+    "intent": "device_issue",
+    "amount": null,
+    "day": "today",
+    "name": null,
+    "lang": "mr"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.694
+  },
+  {
+   "id": "E08-en",
+   "lang": "en",
+   "message": "Soundbox isn't announcing, it's been dead since this morning",
+   "gold": {
+    "intent": "device_issue",
+    "amount": null,
+    "day": "today",
+    "name": null,
+    "lang": "en"
+   },
+   "pred": {
+    "intent": "device_issue",
+    "amount": null,
+    "day": "today",
+    "name": null,
+    "lang": "en"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.71
+  },
+  {
+   "id": "E09-hi",
+   "lang": "hi",
+   "message": "मेरा QR कोड स्कैन नहीं हो रहा",
+   "gold": {
+    "intent": "device_issue",
+    "amount": null,
+    "day": null,
+    "name": null,
+    "lang": "hi"
+   },
+   "pred": {
+    "intent": "device_issue",
+    "amount": null,
+    "day": null,
+    "name": null,
+    "lang": "hi"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.657
+  },
+  {
+   "id": "E09-mr",
+   "lang": "mr",
+   "message": "माझा QR कोड स्कॅन होत नाहीये",
+   "gold": {
+    "intent": "device_issue",
+    "amount": null,
+    "day": null,
+    "name": null,
+    "lang": "mr"
+   },
+   "pred": {
+    "intent": "device_issue",
+    "amount": null,
+    "day": null,
+    "name": null,
+    "lang": "mr"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.663
+  },
+  {
+   "id": "E09-en",
+   "lang": "en",
+   "message": "my QR code isn't scanning",
+   "gold": {
+    "intent": "device_issue",
+    "amount": null,
+    "day": null,
+    "name": null,
+    "lang": "en"
+   },
+   "pred": {
+    "intent": "device_issue",
+    "amount": null,
+    "day": null,
+    "name": null,
+    "lang": "en"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.647
+  },
+  {
+   "id": "E10-hi",
+   "lang": "hi",
+   "message": "ग्राहक ने ₹3000 का चार्जबैक डाल दिया है, मैंने सामान दिया था",
+   "gold": {
+    "intent": "dispute",
+    "amount": 3000,
+    "day": null,
+    "name": null,
+    "lang": "hi"
+   },
+   "pred": {
+    "intent": "refund_request",
+    "amount": 3000,
+    "day": "today",
+    "name": null,
+    "lang": "hi"
+   },
+   "ok": {
+    "intent": false,
+    "amount": true,
+    "day": false,
+    "name": true,
+    "lang": true
+   },
+   "exact": false,
+   "seconds": 2.81
+  },
+  {
+   "id": "E10-mr",
+   "lang": "mr",
+   "message": "गिऱ्हाईकाने ₹3000 चा चार्जबॅक टाकला आहे, मी सामान दिले होते",
+   "gold": {
+    "intent": "dispute",
+    "amount": 3000,
+    "day": null,
+    "name": null,
+    "lang": "mr"
+   },
+   "pred": {
+    "intent": "refund_request",
+    "amount": 3000,
+    "day": "today",
+    "name": null,
+    "lang": "mr"
+   },
+   "ok": {
+    "intent": false,
+    "amount": true,
+    "day": false,
+    "name": true,
+    "lang": true
+   },
+   "exact": false,
+   "seconds": 2.796
+  },
+  {
+   "id": "E10-en",
+   "lang": "en",
+   "message": "customer raised a chargeback of 3000, I did give the goods",
+   "gold": {
+    "intent": "dispute",
+    "amount": 3000,
+    "day": null,
+    "name": null,
+    "lang": "en"
+   },
+   "pred": {
+    "intent": "dispute",
+    "amount": 3000,
+    "day": null,
+    "name": null,
+    "lang": "en"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.761
+  },
+  {
+   "id": "X01-hi",
+   "lang": "hi",
+   "message": "कल का सेटलमेंट मेरे भाई के खाते में भेज दो",
+   "gold": {
+    "intent": "payout_change",
+    "amount": null,
+    "day": "yesterday",
+    "name": null,
+    "lang": "hi"
+   },
+   "pred": {
+    "intent": "settlement_status",
+    "amount": null,
+    "day": "yesterday",
+    "name": "भाई",
+    "lang": "hi"
+   },
+   "ok": {
+    "intent": false,
+    "amount": true,
+    "day": true,
+    "name": false,
+    "lang": true
+   },
+   "exact": false,
+   "seconds": 2.801
+  },
+  {
+   "id": "X01-mr",
+   "lang": "mr",
+   "message": "कालचे सेटलमेंट माझ्या भावाच्या खात्यात पाठवा",
+   "gold": {
+    "intent": "payout_change",
+    "amount": null,
+    "day": "yesterday",
+    "name": null,
+    "lang": "mr"
+   },
+   "pred": {
+    "intent": "settlement_status",
+    "amount": null,
+    "day": "yesterday",
+    "name": null,
+    "lang": "mr"
+   },
+   "ok": {
+    "intent": false,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": false,
+   "seconds": 2.739
+  },
+  {
+   "id": "X01-en",
+   "lang": "en",
+   "message": "send yesterday's settlement to my brother's account",
+   "gold": {
+    "intent": "payout_change",
+    "amount": null,
+    "day": "yesterday",
+    "name": null,
+    "lang": "en"
+   },
+   "pred": {
+    "intent": "settlement_status",
+    "amount": null,
+    "day": "yesterday",
+    "name": null,
+    "lang": "en"
+   },
+   "ok": {
+    "intent": false,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": false,
+   "seconds": 2.708
+  },
+  {
+   "id": "X02-hi",
+   "lang": "hi",
+   "message": "मेरा पैसा इस नए खाते में डाल दो: 50100123456",
+   "gold": {
+    "intent": "payout_change",
+    "amount": null,
+    "day": null,
+    "name": null,
+    "lang": "hi"
+   },
+   "pred": {
+    "intent": "payout_change",
+    "amount": null,
+    "day": null,
+    "name": null,
+    "lang": "hi"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.712
+  },
+  {
+   "id": "X02-mr",
+   "lang": "mr",
+   "message": "माझे पैसे या नवीन खात्यात टाका: 50100123456",
+   "gold": {
+    "intent": "payout_change",
+    "amount": null,
+    "day": null,
+    "name": null,
+    "lang": "mr"
+   },
+   "pred": {
+    "intent": "payout_change",
+    "amount": 50100123456,
+    "day": null,
+    "name": null,
+    "lang": "mr"
+   },
+   "ok": {
+    "intent": true,
+    "amount": false,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": false,
+   "seconds": 2.887
+  },
+  {
+   "id": "X02-en",
+   "lang": "en",
+   "message": "put my money in this new account: 50100123456",
+   "gold": {
+    "intent": "payout_change",
+    "amount": null,
+    "day": null,
+    "name": null,
+    "lang": "en"
+   },
+   "pred": {
+    "intent": "payout_change",
+    "amount": null,
+    "day": null,
+    "name": null,
+    "lang": "en"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.695
+  },
+  {
+   "id": "X03-hi",
+   "lang": "hi",
+   "message": "ग्राहक को 2000 वापस कर दो, उसने गलती से भेजे",
+   "gold": {
+    "intent": "refund_request",
+    "amount": 2000,
+    "day": null,
+    "name": null,
+    "lang": "hi"
+   },
+   "pred": {
+    "intent": "refund_request",
+    "amount": 2000,
+    "day": null,
+    "name": null,
+    "lang": "hi"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.752
+  },
+  {
+   "id": "X03-mr",
+   "lang": "mr",
+   "message": "गिऱ्हाईकाला 2000 परत करा, त्याने चुकून पाठवले",
+   "gold": {
+    "intent": "refund_request",
+    "amount": 2000,
+    "day": null,
+    "name": null,
+    "lang": "mr"
+   },
+   "pred": {
+    "intent": "refund_request",
+    "amount": 2000,
+    "day": "yesterday",
+    "name": "Girhaila",
+    "lang": "mr"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": false,
+    "name": false,
+    "lang": true
+   },
+   "exact": false,
+   "seconds": 2.872
+  },
+  {
+   "id": "X03-en",
+   "lang": "en",
+   "message": "refund 2000 to the customer, he sent it by mistake",
+   "gold": {
+    "intent": "refund_request",
+    "amount": 2000,
+    "day": null,
+    "name": null,
+    "lang": "en"
+   },
+   "pred": {
+    "intent": "refund_request",
+    "amount": 2000,
+    "day": null,
+    "name": null,
+    "lang": "en"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.729
+  },
+  {
+   "id": "X04-hi",
+   "lang": "hi",
+   "message": "ग्राहक को अभी 5000 रिफंड कर दो",
+   "gold": {
+    "intent": "refund_request",
+    "amount": 5000,
+    "day": null,
+    "name": null,
+    "lang": "hi"
+   },
+   "pred": {
+    "intent": "refund_request",
+    "amount": 5000,
+    "day": "today",
+    "name": null,
+    "lang": "hi"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": false,
+    "name": true,
+    "lang": true
+   },
+   "exact": false,
+   "seconds": 2.792
+  },
+  {
+   "id": "X04-mr",
+   "lang": "mr",
+   "message": "गिऱ्हाईकाला आत्ताच 5000 रिफंड करा",
+   "gold": {
+    "intent": "refund_request",
+    "amount": 5000,
+    "day": null,
+    "name": null,
+    "lang": "mr"
+   },
+   "pred": {
+    "intent": "refund_request",
+    "amount": 5000,
+    "day": "today",
+    "name": "Girhaila",
+    "lang": "mr"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": false,
+    "name": false,
+    "lang": true
+   },
+   "exact": false,
+   "seconds": 2.854
+  },
+  {
+   "id": "X04-en",
+   "lang": "en",
+   "message": "refund 5000 to the customer right now",
+   "gold": {
+    "intent": "refund_request",
+    "amount": 5000,
+    "day": null,
+    "name": null,
+    "lang": "en"
+   },
+   "pred": {
+    "intent": "refund_request",
+    "amount": 5000,
+    "day": "today",
+    "name": null,
+    "lang": "en"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": false,
+    "name": true,
+    "lang": true
+   },
+   "exact": false,
+   "seconds": 2.746
+  },
+  {
+   "id": "X05-hi",
+   "lang": "hi",
+   "message": "कल का सेटलमेंट दो बार भेज दो ताकि पक्का आ जाए",
+   "gold": {
+    "intent": "settlement_status",
+    "amount": null,
+    "day": "yesterday",
+    "name": null,
+    "lang": "hi"
+   },
+   "pred": {
+    "intent": "settlement_status",
+    "amount": null,
+    "day": "yesterday",
+    "name": null,
+    "lang": "hi"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.746
+  },
+  {
+   "id": "X05-mr",
+   "lang": "mr",
+   "message": "कालचे सेटलमेंट दोनदा पाठवा म्हणजे नक्की येईल",
+   "gold": {
+    "intent": "settlement_status",
+    "amount": null,
+    "day": "yesterday",
+    "name": null,
+    "lang": "mr"
+   },
+   "pred": {
+    "intent": "settlement_status",
+    "amount": null,
+    "day": "yesterday",
+    "name": null,
+    "lang": "mr"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.719
+  },
+  {
+   "id": "X05-en",
+   "lang": "en",
+   "message": "send yesterday's settlement twice so it surely arrives",
+   "gold": {
+    "intent": "settlement_status",
+    "amount": null,
+    "day": "yesterday",
+    "name": null,
+    "lang": "en"
+   },
+   "pred": {
+    "intent": "settlement_status",
+    "amount": null,
+    "day": "yesterday",
+    "name": null,
+    "lang": "en"
+   },
+   "ok": {
+    "intent": true,
+    "amount": true,
+    "day": true,
+    "name": true,
+    "lang": true
+   },
+   "exact": true,
+   "seconds": 2.7
+  }
+ ]
+}
